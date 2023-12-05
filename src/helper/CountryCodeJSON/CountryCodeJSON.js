@@ -1,0 +1,987 @@
+const CountryCodeArr = [{
+  id: "2",
+  isChecked: false,
+  value: "Afghanistan"
+}, {
+  id: "3",
+  isChecked: false,
+  value: "Albania"
+}, {
+  id: "4",
+  isChecked: false,
+  value: "Algeria"
+}, {
+  id: "5",
+  isChecked: false,
+  value: "American Samoa"
+}, {
+  id: "6",
+  isChecked: false,
+  value: "Andorra"
+}, {
+  id: "7",
+  isChecked: false,
+  value: "Angola"
+}, {
+  id: "8",
+  isChecked: false,
+  value: "Anguilla"
+}, {
+  id: "9",
+  isChecked: false,
+  value: "Antarctica"
+}, {
+  id: "10",
+  isChecked: false,
+  value: "Antigua And Barbuda"
+}, {
+  id: "11",
+  isChecked: false,
+  value: "Argentina"
+}, {
+  id: "12",
+  isChecked: false,
+  value: "Armenia"
+}, {
+  id: "13",
+  isChecked: false,
+  value: "Aruba"
+}, {
+  id: "14",
+  isChecked: false,
+  value: "Australia"
+}, {
+  id: "15",
+  isChecked: false,
+  value: "Austria"
+}, {
+  id: "16",
+  isChecked: false,
+  value: "Azerbaijan"
+}, {
+  id: "17",
+  isChecked: false,
+  value: "Bahamas The"
+}, {
+  id: "18",
+  isChecked: false,
+  value: "Bahrain"
+}, {
+  id: "19",
+  isChecked: false,
+  value: "Bangladesh"
+}, {
+  id: "20",
+  isChecked: false,
+  value: "Barbados"
+}, {
+  id: "21",
+  isChecked: false,
+  value: "Belarus"
+}, {
+  id: "22",
+  isChecked: false,
+  value: "Belgium"
+}, {
+  id: "23",
+  isChecked: false,
+  value: "Belize"
+}, {
+  id: "24",
+  isChecked: false,
+  value: "Benin"
+}, {
+  id: "25",
+  isChecked: false,
+  value: "Bermuda"
+}, {
+  id: "26",
+  isChecked: false,
+  value: "Bhutan"
+}, {
+  id: "27",
+  isChecked: false,
+  value: "Bolivia"
+}, {
+  id: "28",
+  isChecked: false,
+  value: "Bosnia and Herzegovina"
+}, {
+  id: "29",
+  isChecked: false,
+  value: "Botswana"
+}, {
+  id: "30",
+  isChecked: false,
+  value: "Bouvet Island"
+}, {
+  id: "31",
+  isChecked: false,
+  value: "Brazil"
+}, {
+  id: "32",
+  isChecked: false,
+  value: "British Indian Ocean Territory"
+}, {
+  id: "33",
+  isChecked: false,
+  value: "Brunei"
+}, {
+  id: "34",
+  isChecked: false,
+  value: "Bulgaria"
+}, {
+  id: "35",
+  isChecked: false,
+  value: "Burkina Faso"
+}, {
+  id: "36",
+  isChecked: false,
+  value: "Burundi"
+}, {
+  id: "37",
+  isChecked: false,
+  value: "Cambodia"
+}, {
+  id: "38",
+  isChecked: false,
+  value: "Cameroon"
+}, {
+  id: "39",
+  isChecked: false,
+  value: "Canada"
+}, {
+  id: "40",
+  isChecked: false,
+  value: "Cape Verde"
+}, {
+  id: "41",
+  isChecked: false,
+  value: "Cayman Islands"
+}, {
+  id: "42",
+  isChecked: false,
+  value: "Central African Republic"
+}, {
+  id: "43",
+  isChecked: false,
+  value: "Chad"
+}, {
+  id: "44",
+  isChecked: false,
+  value: "Chile"
+}, {
+  id: "45",
+  isChecked: false,
+  value: "China"
+}, {
+  id: "46",
+  isChecked: false,
+  value: "Christmas Island"
+}, {
+  id: "47",
+  isChecked: false,
+  value: "Cocos (Keeling) Islands"
+}, {
+  id: "48",
+  isChecked: false,
+  value: "Colombia"
+}, {
+  id: "49",
+  isChecked: false,
+  value: "Comoros"
+}, {
+  id: "50",
+  isChecked: false,
+  value: "Republic Of The Congo"
+}, {
+  id: "51",
+  isChecked: false,
+  value: "Democratic Republic Of The Congo"
+}, {
+  id: "52",
+  isChecked: false,
+  value: "Cook Islands"
+}, {
+  id: "53",
+  isChecked: false,
+  value: "Costa Rica"
+}, {
+  id: "54",
+  isChecked: false,
+  value: "Cote D'Ivoire (Ivory Coast)"
+}, {
+  id: "55",
+  isChecked: false,
+  value: "Croatia (Hrvatska)"
+}, {
+  id: "56",
+  isChecked: false,
+  value: "Cuba"
+}, {
+  id: "57",
+  isChecked: false,
+  value: "Cyprus"
+}, {
+  id: "58",
+  isChecked: false,
+  value: "Czech Republic"
+}, {
+  id: "59",
+  isChecked: false,
+  value: "Denmark"
+}, {
+  id: "60",
+  isChecked: false,
+  value: "Djibouti"
+}, {
+  id: "61",
+  isChecked: false,
+  value: "Dominica"
+}, {
+  id: "62",
+  isChecked: false,
+  value: "Dominican Republic"
+}, {
+  id: "63",
+  isChecked: false,
+  value: "East Timor"
+}, {
+  id: "64",
+  isChecked: false,
+  value: "Ecuador"
+}, {
+  id: "65",
+  isChecked: false,
+  value: "Egypt"
+}, {
+  id: "66",
+  isChecked: false,
+  value: "El Salvador"
+}, {
+  id: "67",
+  isChecked: false,
+  value: "Equatorial Guinea"
+}, {
+  id: "68",
+  isChecked: false,
+  value: "Eritrea"
+}, {
+  id: "69",
+  isChecked: false,
+  value: "Estonia"
+}, {
+  id: "70",
+  isChecked: false,
+  value: "Ethiopia"
+}, {
+  id: "71",
+  isChecked: false,
+  value: "External Territories of Australia"
+}, {
+  id: "72",
+  isChecked: false,
+  value: "Falkland Islands"
+}, {
+  id: "73",
+  isChecked: false,
+  value: "Faroe Islands"
+}, {
+  id: "74",
+  isChecked: false,
+  value: "Fiji Islands"
+}, {
+  id: "75",
+  isChecked: false,
+  value: "Finland"
+}, {
+  id: "76",
+  isChecked: false,
+  value: "France"
+}, {
+  id: "77",
+  isChecked: false,
+  value: "French Guiana"
+}, {
+  id: "78",
+  isChecked: false,
+  value: "French Polynesia"
+}, {
+  id: "79",
+  isChecked: false,
+  value: "French Southern Territories"
+}, {
+  id: "80",
+  isChecked: false,
+  value: "Gabon"
+}, {
+  id: "81",
+  isChecked: false,
+  value: "Gambia The"
+}, {
+  id: "82",
+  isChecked: false,
+  value: "Georgia"
+}, {
+  id: "83",
+  isChecked: false,
+  value: "Germany"
+}, {
+  id: "84",
+  isChecked: false,
+  value: "Ghana"
+}, {
+  id: "85",
+  isChecked: false,
+  value: "Gibraltar"
+}, {
+  id: "86",
+  isChecked: false,
+  value: "Greece"
+}, {
+  id: "87",
+  isChecked: false,
+  value: "Greenland"
+}, {
+  id: "88",
+  isChecked: false,
+  value: "Grenada"
+}, {
+  id: "89",
+  isChecked: false,
+  value: "Guadeloupe"
+}, {
+  id: "90",
+  isChecked: false,
+  value: "Guam"
+}, {
+  id: "91",
+  isChecked: false,
+  value: "Guatemala"
+}, {
+  id: "92",
+  isChecked: false,
+  value: "Guernsey and Alderney"
+}, {
+  id: "93",
+  isChecked: false,
+  value: "Guinea"
+}, {
+  id: "94",
+  isChecked: false,
+  value: "Guinea-Bissau"
+}, {
+  id: "95",
+  isChecked: false,
+  value: "Guyana"
+}, {
+  id: "96",
+  isChecked: false,
+  value: "Haiti"
+}, {
+  id: "97",
+  isChecked: false,
+  value: "Heard and McDonald Islands"
+}, {
+  id: "98",
+  isChecked: false,
+  value: "Honduras"
+}, {
+  id: "99",
+  isChecked: false,
+  value: "Hong Kong S.A.R."
+}, {
+  id: "100",
+  isChecked: false,
+  value: "Hungary"
+}, {
+  id: "101",
+  isChecked: false,
+  value: "Iceland"
+}, {
+  id: "102",
+  isChecked: false,
+  value: "India"
+}, {
+  id: "103",
+  isChecked: false,
+  value: "Indonesia"
+}, {
+  id: "104",
+  isChecked: false,
+  value: "Iran"
+}, {
+  id: "105",
+  isChecked: false,
+  value: "Iraq"
+}, {
+  id: "106",
+  isChecked: false,
+  value: "Ireland"
+}, {
+  id: "107",
+  isChecked: false,
+  value: "Israel"
+}, {
+  id: "108",
+  isChecked: false,
+  value: "Italy"
+}, {
+  id: "109",
+  isChecked: false,
+  value: "Jamaica"
+}, {
+  id: "110",
+  isChecked: false,
+  value: "Japan"
+}, {
+  id: "111",
+  isChecked: false,
+  value: "Jersey"
+}, {
+  id: "112",
+  isChecked: false,
+  value: "Jordan"
+}, {
+  id: "113",
+  isChecked: false,
+  value: "Kazakhstan"
+}, {
+  id: "114",
+  isChecked: false,
+  value: "Kenya"
+}, {
+  id: "115",
+  isChecked: false,
+  value: "Kiribati"
+}, {
+  id: "116",
+  isChecked: false,
+  value: "Korea North"
+}, {
+  id: "117",
+  isChecked: false,
+  value: "Korea South"
+}, {
+  id: "118",
+  isChecked: false,
+  value: "Kuwait"
+}, {
+  id: "119",
+  isChecked: false,
+  value: "Kyrgyzstan"
+}, {
+  id: "120",
+  isChecked: false,
+  value: "Laos"
+}, {
+  id: "121",
+  isChecked: false,
+  value: "Latvia"
+}, {
+  id: "122",
+  isChecked: false,
+  value: "Lebanon"
+}, {
+  id: "123",
+  isChecked: false,
+  value: "Lesotho"
+}, {
+  id: "124",
+  isChecked: false,
+  value: "Liberia"
+}, {
+  id: "125",
+  isChecked: false,
+  value: "Libya"
+}, {
+  id: "126",
+  isChecked: false,
+  value: "Liechtenstein"
+}, {
+  id: "127",
+  isChecked: false,
+  value: "Lithuania"
+}, {
+  id: "128",
+  isChecked: false,
+  value: "Luxembourg"
+}, {
+  id: "129",
+  isChecked: false,
+  value: "Macau S.A.R."
+}, {
+  id: "130",
+  isChecked: false,
+  value: "Macedonia"
+}, {
+  id: "131",
+  isChecked: false,
+  value: "Madagascar"
+}, {
+  id: "132",
+  isChecked: false,
+  value: "Malawi"
+}, {
+  id: "133",
+  isChecked: false,
+  value: "Malaysia"
+}, {
+  id: "134",
+  isChecked: false,
+  value: "Maldives"
+}, {
+  id: "135",
+  isChecked: false,
+  value: "Mali"
+}, {
+  id: "136",
+  isChecked: false,
+  value: "Malta"
+}, {
+  id: "137",
+  isChecked: false,
+  value: "Man (Isle of)"
+}, {
+  id: "138",
+  isChecked: false,
+  value: "Marshall Islands"
+}, {
+  id: "139",
+  isChecked: false,
+  value: "Martinique"
+}, {
+  id: "140",
+  isChecked: false,
+  value: "Mauritania"
+}, {
+  id: "141",
+  isChecked: false,
+  value: "Mauritius"
+}, {
+  id: "142",
+  isChecked: false,
+  value: "Mayotte"
+}, {
+  id: "143",
+  isChecked: false,
+  value: "Mexico"
+}, {
+  id: "144",
+  isChecked: false,
+  value: "Micronesia"
+}, {
+  id: "145",
+  isChecked: false,
+  value: "Moldova"
+}, {
+  id: "146",
+  isChecked: false,
+  value: "Monaco"
+}, {
+  id: "147",
+  isChecked: false,
+  value: "Mongolia"
+}, {
+  id: "148",
+  isChecked: false,
+  value: "Montserrat"
+}, {
+  id: "149",
+  isChecked: false,
+  value: "Morocco"
+}, {
+  id: "150",
+  isChecked: false,
+  value: "Mozambique"
+}, {
+  id: "151",
+  isChecked: false,
+  value: "Myanmar"
+}, {
+  id: "152",
+  isChecked: false,
+  value: "Namibia"
+}, {
+  id: "153",
+  isChecked: false,
+  value: "Nauru"
+}, {
+  id: "154",
+  isChecked: false,
+  value: "Nepal"
+}, {
+  id: "155",
+  isChecked: false,
+  value: "Netherlands Antilles"
+}, {
+  id: "156",
+  isChecked: false,
+  value: "Netherlands The"
+}, {
+  id: "157",
+  isChecked: false,
+  value: "New Caledonia"
+}, {
+  id: "158",
+  isChecked: false,
+  value: "New Zealand"
+}, {
+  id: "159",
+  isChecked: false,
+  value: "Nicaragua"
+}, {
+  id: "160",
+  isChecked: false,
+  value: "Niger"
+}, {
+  id: "161",
+  isChecked: false,
+  value: "Nigeria"
+}, {
+  id: "162",
+  isChecked: false,
+  value: "Niue"
+}, {
+  id: "163",
+  isChecked: false,
+  value: "Norfolk Island"
+}, {
+  id: "164",
+  isChecked: false,
+  value: "Northern Mariana Islands"
+}, {
+  id: "165",
+  isChecked: false,
+  value: "Norway"
+}, {
+  id: "166",
+  isChecked: false,
+  value: "Oman"
+}, {
+  id: "167",
+  isChecked: false,
+  value: "Pakistan"
+}, {
+  id: "168",
+  isChecked: false,
+  value: "Palau"
+}, {
+  id: "169",
+  isChecked: false,
+  value: "Palestinian Territory Occupied"
+}, {
+  id: "170",
+  isChecked: false,
+  value: "Panama"
+}, {
+  id: "171",
+  isChecked: false,
+  value: "Papua new Guinea"
+}, {
+  id: "172",
+  isChecked: false,
+  value: "Paraguay"
+}, {
+  id: "173",
+  isChecked: false,
+  value: "Peru"
+}, {
+  id: "174",
+  isChecked: false,
+  value: "Philippines"
+}, {
+  id: "175",
+  isChecked: false,
+  value: "Pitcairn Island"
+}, {
+  id: "176",
+  isChecked: false,
+  value: "Poland"
+}, {
+  id: "177",
+  isChecked: false,
+  value: "Portugal"
+}, {
+  id: "178",
+  isChecked: false,
+  value: "Puerto Rico"
+}, {
+  id: "179",
+  isChecked: false,
+  value: "Qatar"
+}, {
+  id: "180",
+  isChecked: false,
+  value: "Reunion"
+}, {
+  id: "181",
+  isChecked: false,
+  value: "Romania"
+}, {
+  id: "182",
+  isChecked: false,
+  value: "Russia"
+}, {
+  id: "183",
+  isChecked: false,
+  value: "Rwanda"
+}, {
+  id: "184",
+  isChecked: false,
+  value: "Saint Helena"
+}, {
+  id: "185",
+  isChecked: false,
+  value: "Saint Kitts And Nevis"
+}, {
+  id: "186",
+  isChecked: false,
+  value: "Saint Lucia"
+}, {
+  id: "187",
+  isChecked: false,
+  value: "Saint Pierre and Miquelon"
+}, {
+  id: "188",
+  isChecked: false,
+  value: "Saint Vincent And The Grenadines"
+}, {
+  id: "189",
+  isChecked: false,
+  value: "Samoa"
+}, {
+  id: "190",
+  isChecked: false,
+  value: "San Marino"
+}, {
+  id: "191",
+  isChecked: false,
+  value: "Sao Tome and Principe"
+}, {
+  id: "192",
+  isChecked: false,
+  value: "Saudi Arabia"
+}, {
+  id: "193",
+  isChecked: false,
+  value: "Senegal"
+}, {
+  id: "194",
+  isChecked: false,
+  value: "Serbia"
+}, {
+  id: "195",
+  isChecked: false,
+  value: "Seychelles"
+}, {
+  id: "196",
+  isChecked: false,
+  value: "Sierra Leone"
+}, {
+  id: "197",
+  isChecked: false,
+  value: "Singapore"
+}, {
+  id: "198",
+  isChecked: false,
+  value: "Slovakia"
+}, {
+  id: "199",
+  isChecked: false,
+  value: "Slovenia"
+}, {
+  id: "200",
+  isChecked: false,
+  value: "Smaller Territories of the UK"
+}, {
+  id: "201",
+  isChecked: false,
+  value: "Solomon Islands"
+}, {
+  id: "202",
+  isChecked: false,
+  value: "Somalia"
+}, {
+  id: "203",
+  isChecked: false,
+  value: "South Africa"
+}, {
+  id: "204",
+  isChecked: false,
+  value: "South Georgia"
+}, {
+  id: "205",
+  isChecked: false,
+  value: "South Sudan"
+}, {
+  id: "206",
+  isChecked: false,
+  value: "Spain"
+}, {
+  id: "207",
+  isChecked: false,
+  value: "Sri Lanka"
+}, {
+  id: "208",
+  isChecked: false,
+  value: "Sudan"
+}, {
+  id: "209",
+  isChecked: false,
+  value: "Suriname"
+}, {
+  id: "210",
+  isChecked: false,
+  value: "Svalbard And Jan Mayen Islands"
+}, {
+  id: "211",
+  isChecked: false,
+  value: "Swaziland"
+}, {
+  id: "212",
+  isChecked: false,
+  value: "Sweden"
+}, {
+  id: "213",
+  isChecked: false,
+  value: "Switzerland"
+}, {
+  id: "214",
+  isChecked: false,
+  value: "Syria"
+}, {
+  id: "215",
+  isChecked: false,
+  value: "Taiwan"
+}, {
+  id: "216",
+  isChecked: false,
+  value: "Tajikistan"
+}, {
+  id: "217",
+  isChecked: false,
+  value: "Tanzania"
+}, {
+  id: "218",
+  isChecked: false,
+  value: "Thailand"
+}, {
+  id: "219",
+  isChecked: false,
+  value: "Togo"
+}, {
+  id: "220",
+  isChecked: false,
+  value: "Tokelau"
+}, {
+  id: "221",
+  isChecked: false,
+  value: "Tonga"
+}, {
+  id: "222",
+  isChecked: false,
+  value: "Trinidad And Tobago"
+}, {
+  id: "223",
+  isChecked: false,
+  value: "Tunisia"
+}, {
+  id: "224",
+  isChecked: false,
+  value: "Turkey"
+}, {
+  id: "225",
+  isChecked: false,
+  value: "Menistan"
+}, {
+  id: "226",
+  isChecked: false,
+  value: "Turks And Caicos Islands"
+}, {
+  id: "227",
+  isChecked: false,
+  value: "Tuvalu"
+}, {
+  id: "228",
+  isChecked: false,
+  value: "Uganda"
+}, {
+  id: "229",
+  isChecked: false,
+  value: "Ukraine"
+}, {
+  id: "230",
+  isChecked: false,
+  value: "United Arab Emirates"
+}, {
+  id: "231",
+  isChecked: false,
+  value: "United Kingdom"
+}, {
+  id: "232",
+  isChecked: false,
+  value: "United States"
+}, {
+  id: "233",
+  isChecked: false,
+  value: "United States Minor Outlying Islands"
+}, {
+  id: "234",
+  isChecked: false,
+  value: "Uruguay"
+}, {
+  id: "235",
+  isChecked: false,
+  value: "Uzbekistan"
+}, {
+  id: "236",
+  isChecked: false,
+  value: "Vanuatu"
+}, {
+  id: "237",
+  isChecked: false,
+  value: "Vatican City State (Holy See)"
+}, {
+  id: "238",
+  isChecked: false,
+  value: "Venezuela"
+}, {
+  id: "239",
+  isChecked: false,
+  value: "Vietnam"
+}, {
+  id: "240",
+  isChecked: false,
+  value: "Virgin Islands (British)"
+}, {
+  id: "241",
+  isChecked: false,
+  value: "Virgin Islands (US)"
+}, {
+  id: "242",
+  isChecked: false,
+  value: "Wallis And Futuna Islands"
+}, {
+  id: "243",
+  isChecked: false,
+  value: "Western Sahara"
+}, {
+  id: "244",
+  isChecked: false,
+  value: "Yemen"
+}, {
+  id: "245",
+  isChecked: false,
+  value: "Yugoslavia"
+}, {
+  id: "246",
+  isChecked: false,
+  value: "Zambia"
+}, {
+  id: "247",
+  isChecked: false,
+  value: "Zimbabwe"
+}]
+
+export default CountryCodeArr;
